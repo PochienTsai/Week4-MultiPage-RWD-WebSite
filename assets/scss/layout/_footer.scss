@@ -1,0 +1,136 @@
+.footerbar {
+  margin-top: 32px;
+  padding-top: 48px;
+  background-color: #aa0601;
+
+  @include iPad() {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.social-logo {
+  width: 48px;
+  /* height: 48px; */
+
+  @include iPad() {
+    width: 24px;
+  }
+}
+
+.social-bar-link {
+  padding-right: 32px;
+
+  @include iPad() {
+    padding-right: 8px;
+  }
+}
+
+.footerbar-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerbar-menu {
+  display: flex;
+  justify-content: space-between;
+
+  @include iPad() {
+    display: none;
+  }
+}
+
+.social-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerbar-menu-item-link {
+  height: 100%;
+  display: block;
+  font-size: 16px;
+  color: #ffffff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 48px;
+
+  @include iPad() {
+    font-size: 0px;
+    height: 0%;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: "Material Icons";
+  /* 使用 Material Icons 字体 */
+  font-size: 36px;
+
+  /* 设置字体大小 */
+  /* 可选：添加其他样式，比如颜色、文本阴影等 */
+  @include iPad() {
+    font-size: 16px;
+  }
+}
+
+.contactList {
+  margin-top: 36px;
+
+  @include iPad() {
+    margin-top: 0px;
+    margin-bottom: 32px;
+  }
+}
+
+.contactList li a {
+  font-size: 36px;
+  color: #ffffff;
+
+  @include iPad() {
+    font-size: 16px;
+  }
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.footerbar-bottom ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include iPad() {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #ffffff;
+}
+
+.copyright-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 16px;
+  color: #ffffff;
+
+  @include iPad() {
+    padding-top: 8px;
+    padding-bottom: 0px;
+  }
+}
+
+.copyright-item-rule {
+  padding-right: 48px;
+  font-size: 14px;
+
+  @include iPad() {
+    font-size: 16px;
+    padding-top: 8px;
+  }
+}
+
+.p-r-0 {
+  padding-right: 0px;
+}

@@ -1,0 +1,11 @@
+@import "helper/variable"; // Variables
+@import "base/reset"; // CSS reset
+@import "helper/mixins"; // Mixins
+@import "helper/base"; // 全站樣式 img{}, body{}
+
+//共用元件
+@import "layout/header";
+@import "layout/footer";
+
+//頁面
+@import "pages/index";

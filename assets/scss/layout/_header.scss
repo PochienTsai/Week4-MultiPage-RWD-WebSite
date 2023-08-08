@@ -1,0 +1,71 @@
+.navbar {
+  padding: 16px 0;
+  background-color: #aa0601;
+  @include iPad() {
+    padding-bottom: 0;
+  }
+}
+
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  @include iPad() {
+    flex-direction: column;
+    /* 移除左右 padding 再加入 max-width: 100%; 讓導覽列能變為滿版 */
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+  }
+}
+
+.nav-logo {
+  width: 80px;
+
+  @include iPad() {
+    margin: 0 0 16px 16px;
+  }
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.menubar {
+  display: flex;
+  align-items: center;
+  @include iPad() {
+    flex-wrap: wrap;
+  }
+}
+
+.menubar-item {
+  height: 100%;
+
+  @include iPad() {
+    width: 50%;
+    margin-right: 0px;
+    border: 1px solid #ffffff;
+  }
+}
+
+.menubar-item:last-child {
+  padding-right: 0;
+}
+
+.menubar-item-link {
+  height: 100%;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 8px 32px;
+
+  @include iPad() {
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 0;
+  }
+}
+
+.menubar-item-link:hover {
+  opacity: 0.7;
+}

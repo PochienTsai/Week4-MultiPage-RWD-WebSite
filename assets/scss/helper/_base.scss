@@ -1,0 +1,41 @@
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* 全域 border box */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.container {
+  /* 桌機 */
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  /* 平板 */
+  @include iPad() {
+    max-width: 720px;
+  }
+
+  /* 手機 */
+  @include iphone6() {
+    max-width: 372px;
+  }
+}
