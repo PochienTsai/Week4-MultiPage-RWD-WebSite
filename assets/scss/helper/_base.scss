@@ -39,3 +39,23 @@ body {
     max-width: 372px;
   }
 }
+.material-icons {
+  font-family: "Material Icons";
+  /* 使用 Material Icons 字体 */
+}
+.Large-title {
+  font-size: 48px;
+  padding-left: 16px;
+  border-left: 8px solid #9f1213;
+  margin-top: 176px;
+  /* 平板 */
+  @include iPad() {
+    margin-top: 80px;
+  }
+
+  /* 手機 */
+  @include iphone6() {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+}

@@ -61,8 +61,7 @@
 }
 
 .material-symbols-outlined {
-  font-family: "Material Icons";
-  /* 使用 Material Icons 字体 */
+  @extend .material-icons;
   font-size: 36px;
 
   /* 设置字体大小 */
